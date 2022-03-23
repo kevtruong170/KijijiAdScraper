@@ -10,7 +10,7 @@ def getDate(div):
         return None
 
     #If minutes is less than 10, we return the datetime
-    if int(time) < 10:
+    if int(time) <= 10:
         return adDate
 
 def checkTime(datePosted):
