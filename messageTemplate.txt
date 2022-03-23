@@ -1,0 +1,5 @@
+New Listing: ${AD_TITLE}
+Price: ${AD_PRICE}
+Location: ${AD_LOCATION}
+Description: ${AD_DESC}
+Link: ${AD_LINK}
