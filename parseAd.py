@@ -40,7 +40,8 @@ def getLoc(div):
     return location
 
 def getPrice(div):
-    div.find(attrs={"class": ["price"]}).text.strip()
+    price = div.find(attrs={"class": ["price"]}).text.strip()
+    return price
 
 def getDesc(div):
     description = div.find(attrs={"class": ["description"]}).text.strip()
