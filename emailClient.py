@@ -19,7 +19,7 @@ def eLogin():
         return s
     except:
         print("Error starting SMTP")
-        return None
+        return Nonegit
 
 #Sends email
 def sendEmail(listing, userEmail):
