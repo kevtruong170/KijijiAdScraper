@@ -1,3 +1,5 @@
 # created by virtualenv automatically
 *.git
 .idea
+.DS_Store
+venv
