@@ -13,13 +13,13 @@ message_template = emailTemplate.read_template('messageTemplate.txt')
 #Logging onto email client server
 def eLogin():
     try:
-        s = smtplib.SMTP(host='smtp.gmail.com', port=587)
+        s = smtplib.SMTP(host='relay-smtp.gmail.com', port=587)
         s.starttls()
         s.login(email, password)
         return s
     except:
         print("Error starting SMTP")
-        return Nonegit
+        return None
 
 #Sends email
 def sendEmail(listing, userEmail):
