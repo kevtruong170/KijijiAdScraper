@@ -6,10 +6,6 @@ import emailClient
 import filterFuncs
 import parseAd
 
-userEmail = emailClient.eLogin()
-if userEmail is None:
-    quit()
-
 #Car filter
 carList = filterFuncs.findCars
 
@@ -27,6 +23,11 @@ x = 1
 newCar = 0
 
 while x == 1:
+
+    userEmail = emailClient.eLogin()
+    if userEmail is None:
+        quit()
+
     for car in carList:
         adList = []
         #Creating the link that will be used to search the car
@@ -76,6 +77,6 @@ while x == 1:
 
     else:
         print(current_time + "No new car")
-
+    emailClient.eLogout(userEmail)
     newCar = 0
     time.sleep(600)
